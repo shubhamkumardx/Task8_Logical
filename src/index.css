@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+.cs-form{
+    display:flex ;
+    justify-content: center;
+}
+.cs-form1{
+    font-size: 22px;
+    font-weight: 500;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cs-form3{
+    font-size: 65px;
+    margin-top: 5%;
+}
+.cs-form4{
+    margin-left: 2%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20%;
+}
+
+.cs1{
+    margin-top: 3%;
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    margin-left: 27%;
+}
+.cs2{
+    font-size: 35px;
+    color: rgb(25,135,84);
 }
