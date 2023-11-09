@@ -1,0 +1,95 @@
+import React, { useEffect, useState } from 'react';
+
+function New_comp(props) {
+    const [minutes, setMinutes] = useState(+window.localStorage.getItem("count"));
+    const [seconds, setSeconds] = useState(+window.localStorage.getItem("cot"));
+    const [flag, setFlag] = useState(false);
+
+
+    const handleChange = (e) => {
+        setMinutes(e.target.value);
+    }
+
+
+    const handlesecond = (e) => {
+        setSeconds(e.target.value)
+    }
+
+ 
+    useEffect(() => {
+        if (flag) {
+            const interval = setInterval(() => {
+                if (parseInt(seconds) == 0 && parseInt(minutes) !== 0) {
+                    setSeconds((seconds) => seconds + 59);
+                    setMinutes((minutes) => minutes - 1);
+                } else if (parseInt(seconds) == 0 && parseInt(minutes) == 0) {
+                } else {
+                    setSeconds((seconds) => seconds - 1);
+                }
+            }, 1000);
+            return () => {
+                clearInterval(interval);
+                console.log(interval)
+            };
+        }
+    }, [seconds, minutes, flag]);
+
+
+    const startt = () => {
+        setFlag(true);
+        setMinutes(window.localStorage.getItem("count"))
+        setSeconds(window.localStorage.getItem("cot"))
+    }
+
+    const stop = () => {
+        setFlag(false);
+        setMinutes(window.localStorage.setItem("count", minutes));
+        setSeconds(window.localStorage.setItem("cot", seconds));
+    }
+
+
+    return (
+        <div>
+            <div className='container'>
+                <p className='text-center cs2 mt-5 fw-bold'>The Timer Clock</p>
+                <div className='cs1'>
+
+                    <div className='cs-form mt-3'>
+                        <p className='cs-form1'>Set Your Timer in</p>
+                        <input type='text' onChange={handleChange} className='cs-form4' name='minute' />
+                        <p className='cs-form1'>Minute &</p>
+                    </div>
+
+                    <div className='cs-form '>
+                        <input type='text' onChange={handlesecond} className='cs-form4' name='second' />
+                        <p className='cs-form1'>second</p>
+                    </div>
+                    {
+                    flag ?
+                        <p className='cs-form3 text-center fw-bold'>{parseInt(minutes) < 10 ? "0" + minutes : minutes}:{parseInt(seconds) < 10 ? "0" + seconds : seconds}</p>
+                        :
+                        <p className='cs-form3 text-center fw-bold'>{parseInt(localStorage.getItem("count")) < 10 ? "0" + parseInt(localStorage.getItem("count")) : parseInt(localStorage.getItem("count"))}
+                            :{parseInt(localStorage.getItem("cot")) < 10 ? "0" + parseInt(localStorage.getItem("cot")) : parseInt(localStorage.getItem("cot"))}</p>
+                    }
+
+
+                    <div className='text-center mt-5'>
+                        {
+                            flag ?
+                                <button type="button" className="btn btn-danger  text-white" onClick={stop}>Stop</button>
+                                :
+                                <button type="button" className="btn btn-success" onClick={startt}>Start</button>
+                        }
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    );
+}
+
+export default New_comp;    
