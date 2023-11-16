@@ -14,7 +14,8 @@ function New_comp(props) {
     const handlesecond = (e) => {
         setSeconds(e.target.value)
     }
-    console.log(minutes, typeof (sessionStorage.getItem("minutes")), parseInt(sessionStorage.getItem("minutes")));
+   
+
     useEffect(() => {
         if (flag) {
             const interval = setInterval(() => {
@@ -32,7 +33,6 @@ function New_comp(props) {
             };
         }
     }, [seconds, minutes, flag]);
-
 
 
     const startt = () => {
@@ -62,6 +62,7 @@ function New_comp(props) {
                         <input type='text' onChange={handlesecond} className='cs-form4' name='second' />
                         <p className='cs-form1'>second</p>
                     </div>
+
                     {/* {
                         flag ?
                             <p className='cs-form3 text-center fw-bold'>{parseInt(minutes) < 10 ? "0" + minutes : minutes}:{parseInt(seconds) < 10 ? "0" + seconds : seconds}</p>
@@ -70,20 +71,17 @@ function New_comp(props) {
                                 :{parseInt(sessionStorage.getItem("seconds")) < 10 ? "0" + parseInt(sessionStorage.getItem("seconds")) : parseInt(sessionStorage.getItem("seconds"))}</p>
                     } */}
 
+                    
                     <p className='cs-form3 text-center fw-bold'>{parseInt(minutes) < 10 ? "0" + minutes : minutes}:{parseInt(seconds) < 10 ? "0" + seconds : seconds}</p>
 
 
                     <div className='text-center mt-5'>
-
                         {
-                            flag ? 
-                            <button type="button" className="btn btn-danger  text-white" onClick={stop}>Stop</button>
-                            :
-                          
-                            <button type="button" className="btn btn-success" onClick={startt}>Start</button>
+                            flag ?
+                                <button type="button" className="btn btn-danger  text-white" onClick={stop}>Stop</button>
+                                :
+                                <button type="button" className="btn btn-success" onClick={startt}>Start</button>
                         }
-                      
-                     
                     </div>
 
                 </div>

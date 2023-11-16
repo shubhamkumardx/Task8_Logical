@@ -33,3 +33,23 @@
     font-size: 35px;
     color: rgb(25,135,84);
 }
+/* body{
+    background-color: rgb(232,234,237);
+
+} */
+.nav5{
+    background-color: white;
+    
+}
+.nav1{
+    font-size: 26px;
+    color: blue;
+}
+.tab3{
+    display: none;
+}
+.tab4{
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
