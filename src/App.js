@@ -6,6 +6,7 @@ import New_comp from './Components/New_comp';
 import Stopwatch from './Components/Stopwatch';
 import Tabbing from './Components/Tabbing';
 import Timer from './Components/Timer';
+import Animated from './Components/Animated';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       {/* <Clock/> */}
       {/* <New_comp/>  */}
       {/* <Tabbing/> */}
-      <Stopwatch />
+      {/* <Stopwatch /> */}
+      <Animated/>
 
     </div>
   );
