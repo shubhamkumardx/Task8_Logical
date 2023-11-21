@@ -4,7 +4,7 @@ function Tabbing(props) {
     const [active, IsActive] = useState(1);
 
     return (
-        
+
         <div>
             <div className='container'>
                 <div className='tab2'>
@@ -31,9 +31,9 @@ function Tabbing(props) {
 
 
                     <div className='container d-flex nav5 '>
+
                         {
                             active == 1 && <>
-
                                 <p className='mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, imply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </>
                         }
@@ -51,10 +51,8 @@ function Tabbing(props) {
                         {
                             active == 4 && <>
                                 <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cupiditate? Officia eligendi error accusamus optio ipsa tempore corporis. Veniam repellendus adipisci similique nisi, porro et maxime vitae laboriosam libero illum.</p>
-
                             </>
                         }
-
 
                     </div>
 
@@ -119,13 +117,8 @@ function Tabbing(props) {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
-
-
 
 
 
