@@ -13,7 +13,6 @@ function Stopwatch(props) {
     const [countUpSeconds, setCountUpSeconds] = useState(0);
 
 
-
     const handleChange = (e) => {
         setMinutes(e.target.value);
         setMinutess(e.target.value);
@@ -47,35 +46,29 @@ function Stopwatch(props) {
 
 
 
-  
-
-
-   
-        useEffect(() => {
-            if (flag) {
-                const interval = setInterval(() => {
-                    if (countUpMinutes == parseInt(minutess) && countUpSeconds == parseInt(secondss)) {
-                        console.log("matched");
-                        setFlag(false)
-                        toast.error("TIME UP!");
-
-                    }
-                    else if (countUpSeconds === 60) {
-                        setCountUpMinutes(countUpMinutes + 1);
-                        setCountUpSeconds(0);
-                    }
-                    else {
-                        setCountUpSeconds(countUpSeconds + 1);
-                    }
-
-                }, 1200);
-
-                return () => {
-                    clearInterval(interval);
+    useEffect(() => {
+        if (flag) {
+            const interval = setInterval(() => {
+                if (countUpMinutes == parseInt(minutess) && countUpSeconds == parseInt(secondss)) {
+                    console.log("matched");
+                    setFlag(false)
+                    toast.error("TIME UP!");
                 }
-            }
+                else if (countUpSeconds === 60) {
+                    setCountUpMinutes(countUpMinutes + 1);
+                    setCountUpSeconds(0);
+                }
+                else {
+                    setCountUpSeconds(countUpSeconds + 1);
+                }
+            }, 1200);
 
-        }, [countUpMinutes, countUpSeconds, flag])
+            return () => {
+                clearInterval(interval);
+            }
+        }
+
+    }, [countUpMinutes, countUpSeconds, flag])
 
 
 

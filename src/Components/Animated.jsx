@@ -29,7 +29,7 @@ function Animated(props) {
                 <hr></hr>
             </div>
 
-        
+
 
             <div className='container mt-5'>
                 <div className='row'>
@@ -117,14 +117,14 @@ function Animated(props) {
                 </div>
 
 
-          
+
             </div>
 
             <br /> <br /> <br />
 
 
-            
-            
+
+
         </div>
     );
 }

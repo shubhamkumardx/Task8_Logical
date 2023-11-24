@@ -695,25 +695,40 @@
 }
 
 .prevv1 {
-    width: 100%;
-    margin-left: 10%;
+    width: 50%;
+    /* margin-left: 10%; */
 }
 
+.pp2 {
+    /* max-width: 50%;
+    max-height: 50px; */
+    width: 37%;
+    height: 400px;
+    position: absolute;
+    margin-left: 2%;
+   
+}
+
+
 .slider2 {
-    width: 110%;
+    width: 100%;
+}
+
+.slider8 {
+    width: 80%;
 }
 
 .prevv2 {
     background-color: black;
     width: 25px;
-    margin-left: 7.4%;
+    /* margin-left: 7.4%; */
 
 }
 
 .prevv3 {
     background-color: black;
     width: 25px;
-    margin-right: 7.2%;
+    /* margin-right: 7.2%; */
 }
 
 .prevv4 {
@@ -722,4 +737,93 @@
 
 }
 
+.mag-1 {
+    font-size: 18px;
+    font-weight: 400;
+}
 
+.mag-2 {
+    margin-left: 50%;
+}
+
+.mag-3 {
+    margin-left: 2%;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: -1%;
+}
+
+.mag-4 {
+    width: 38px;
+    height: 22px;
+    background-color: rgb(56, 142, 60);
+    margin-top: -1%;
+    border-radius: 4px;
+}
+
+.mag-5{
+    width: 100px;
+    height: 30px;
+    margin-left: 4%;
+    margin-top: -2%;
+}
+
+.mag-6{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mag-7{
+    font-weight: 400;
+    margin-left: 2%;
+    margin-top: 1.6%;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.mag-8{
+    color: rgb(75,144,72);
+    font-weight: 500;
+    font-size: 17px;
+    margin-left: 3%;
+    margin-top: 0.9%;
+}
+
+.mag-9{
+    margin-left: -6.2%;
+}
+
+.mag-10{
+ 
+    color: rgb(75,116,240);
+
+}
+
+.mag-11{
+    font-weight: 500;
+    color:rgb(75,116,240) ;
+}
+
+.mag-12{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.mag-13{
+    border: 1px solid rgb(240,240,240);
+}
+.mag-14{
+    margin-top: 50%;
+}
+
+.tyy{
+    left: 366.797px;
+    width: 216.203px;
+    height: 85px;
+    overflow: hidden;
+}
+
+.immg{
+    width: 50px;
+    height: 50px;
+}

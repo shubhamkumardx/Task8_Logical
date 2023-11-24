@@ -46,7 +46,7 @@ function Timer(props) {
         <div className='cs1'>
           <div className='cs-form mt-5'>
             <p className='cs-form1'>Set Your Timer in Minute</p>
-            <input type='text' onChange={handleChange} className='cs-form4'/>
+            <input type='text' onChange={handleChange} className='cs-form4' />
           </div>
 
 

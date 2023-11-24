@@ -14,7 +14,7 @@ function New_comp(props) {
     const handlesecond = (e) => {
         setSeconds(e.target.value)
     }
-   
+
 
     useEffect(() => {
         if (flag) {
@@ -71,7 +71,7 @@ function New_comp(props) {
                                 :{parseInt(sessionStorage.getItem("seconds")) < 10 ? "0" + parseInt(sessionStorage.getItem("seconds")) : parseInt(sessionStorage.getItem("seconds"))}</p>
                     } */}
 
-                    
+
                     <p className='cs-form3 text-center fw-bold'>{parseInt(minutes) < 10 ? "0" + minutes : minutes}:{parseInt(seconds) < 10 ? "0" + seconds : seconds}</p>
 
 
