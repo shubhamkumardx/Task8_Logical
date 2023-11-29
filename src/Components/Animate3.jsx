@@ -6,7 +6,7 @@ function Animate3(props) {
 
 
     return (
-        <div>
+        <div id='animationTask3'>
             <div className='mt-4'>
 
                 <div className='container'>
@@ -26,7 +26,7 @@ function Animate3(props) {
                                                 onClick={() => IsActive(2)} style={active === 2 ? { border: '2px solid black' } : { border: "none" }}
                                             />
                                         </div>
-     
+
                                         <div className='col'>
                                             <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/showpiece-figurine/w/l/s/15-24-7-62-adiyogi-black-color-trnsform-12-7-original-imagz83guyu6th3f.jpeg?q=70" className="d-block  slider1" alt="..."
                                                 onClick={() => IsActive(3)} style={active === 3 ? { border: '2px solid black' } : { border: "none" }}
@@ -41,7 +41,7 @@ function Animate3(props) {
 
                                         <div className='col'>
                                             <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/showpiece-figurine/b/c/g/8-8-hanuman-ji-chhariya-crafts-16-original-imagp5gy6ghhwfex.jpeg?q=70" className="d-block slider1" alt="..."
-                                                onClick={() => IsActive(5)} style={active === 5 ? { border: '2px solid black' } : { border: "none" }} 
+                                                onClick={() => IsActive(5)} style={active === 5 ? { border: '2px solid black' } : { border: "none" }}
                                             />
                                         </div>
                                     </div>
@@ -79,7 +79,7 @@ function Animate3(props) {
                                                 onClick={() => IsActive(10)} style={active === 10 ? { border: '2px solid black' } : { border: "none" }}
                                             />
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -415,12 +415,12 @@ function Animate3(props) {
                 <div className='container'>
 
                     <div className='d-flex mag-13 mt-5'>
-                        
+
                         <div className='mt-2 '>
                             {
                                 active == 1 && <>
-                                    <div className='pp2' >
-                                        <ReactImageMagnify  
+                                    <div className='pp2'  >
+                                        <ReactImageMagnify 
                                             {...{
                                                 smallImage: {
                                                     alt: "wristwatch by versace",
@@ -428,23 +428,24 @@ function Animate3(props) {
                                                     src: "https://rukminim2.flixcart.com/image/612/612/xif0q/painting/u/c/b/30-5-ms-6mm-5p-1730-16227-masstone-original-imagtg63jgs97aec.jpeg?q=70",
                                                     width: 500,
                                                     height: 362,
-                                                    // sizes: "(max-width: 480px) 100vw, (max-width: 1200px) 30vw, 360px", 
+                                                  
                                                 },
+
                                                 largeImage: {
                                                     isFluidWidth: true,
                                                     src: "https://rukminim2.flixcart.com/image/612/612/xif0q/painting/u/c/b/30-5-ms-6mm-5p-1730-16227-masstone-original-imagtg63jgs97aec.jpeg?q=70",
                                                     width: 1646,
                                                     height: 1800,
+                                                    isHintEnabled: true
                                                 },
-                                                enlargedImageContainerStyle: {
-                                          
-                                                  }
+                                               
                                             }}
                                         />
                                     </div>
 
                                 </>
                             }
+
 
                             {
                                 active == 2 && <>
@@ -466,12 +467,10 @@ function Animate3(props) {
                                                 },
                                             }}
                                         />
-
                                     </div>
-
-
                                 </>
                             }
+
 
                             {
                                 active == 3 && <>
@@ -491,17 +490,12 @@ function Animate3(props) {
                                                     width: 1646,
                                                     height: 1800,
                                                 },
-
-
-
                                             }}
                                         />
-
                                     </div>
-
-
                                 </>
                             }
+
 
                             {
                                 active == 4 && <>
@@ -528,6 +522,7 @@ function Animate3(props) {
                                 </>
                             }
 
+
                             {
                                 active == 5 && <>
                                     <div className='pp2'>
@@ -548,10 +543,9 @@ function Animate3(props) {
                                             }}
                                         />
                                     </div>
-
-                                    {/* <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/e/b/q/-original-imagunxghhkhvsx7.jpeg?q=70" className="d-block slider2" alt="..." /> */}
                                 </>
                             }
+
 
                             {
                                 active == 6 && <>
@@ -574,10 +568,9 @@ function Animate3(props) {
                                             }}
                                         />
                                     </div>
-
-                                    {/* <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/q/d/8/-original-imagu2f6yggwmmzf.jpeg?q=70" className="d-block slider2" alt="..." /> */}
                                 </>
                             }
+
 
                             {
                                 active == 7 && <>
@@ -601,10 +594,9 @@ function Animate3(props) {
                                         />
 
                                     </div>
-
-                                    {/* <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/0/k/6/printed-vo-db485-flat-chhavi-india-original-imagmw7mcfvtrmca.jpeg?q=70" className="d-block slider2" alt="..." /> */}
                                 </>
                             }
+
 
                             {
                                 active == 8 && <>
@@ -627,10 +619,9 @@ function Animate3(props) {
                                             }}
                                         />
                                     </div>
-
-                                    {/* <img src="https://rukminim2.flixcart.com/image/612/612/kxhvf680/bed-cover/r/t/0/double-1-sukha-ped-black-devatwal-fashion-original-imag9x2ugmdhw73t.jpeg?q=70" className="d-block slider2" alt="..." /> */}
                                 </>
                             }
+
 
                             {
                                 active == 9 && <>
@@ -653,10 +644,9 @@ function Animate3(props) {
                                             }}
                                         />
                                     </div>
-
-                                    {/* <img src="https://rukminim2.flixcart.com/image/612/612/l12h1u80/bedsheet/v/7/1/double-00bd414-1-double-bedsheet050244-flat-decorum-original-imagcq25sr9rjutz.jpeg?q=70" className="d-block slider2" alt="..." /> */}
                                 </>
                             }
+
 
                             {
                                 active == 10 && <>
@@ -679,12 +669,11 @@ function Animate3(props) {
                                                 },
                                             }}
                                         />
-                                    </div>
-                                    {/* <img src="https://rukminim2.flixcart.com/image/612/612/kxhvf680/bed-cover/r/t/0/double-1-sukha-ped-black-devatwal-fashion-original-imag9x2ugmdhw73t.jpeg?q=70" className="d-block slider2" alt="..." /> */}
+                                    </div>     
                                 </>
                             }
-
                         </div>
+
 
                         <div className='mt-2 mag-2'>
                             <p className='mag-1'>Masstone Radha Krishna with Flute Religious 5 Piece Panel MDF Painting Digital Reprint 17 inch x 30 inch Painting.(With Frame)</p>
